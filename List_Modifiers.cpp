@@ -1,0 +1,101 @@
+// #include<bits/stdc++.h>
+#include <algorithm>
+#include <array>
+#include <bitset>
+#include <cassert>
+#include <cctype>
+#include <cerrno>
+#include <cfloat>
+#include <ciso646>
+#include <climits>
+#include <clocale>
+#include <cmath>
+#include <complex>
+#include <csetjmp>
+#include <csignal>
+#include <cstdarg>
+#include <cstddef>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <cwchar>
+#include <cwctype>
+#include <deque>
+#include <exception>
+#include <fstream>
+#include <functional>
+#include <iomanip>
+#include <ios>
+#include <iosfwd>
+#include <iostream>
+#include <istream>
+#include <iterator>
+#include <limits>
+#include <list>
+#include <locale>
+#include <map>
+#include <memory>
+#include <new>
+#include <numeric>
+#include <ostream>
+#include <queue>
+#include <random>
+#include <regex>
+#include <set>
+#include <sstream>
+#include <stack>
+#include <stdexcept>
+#include <streambuf>
+#include <string>
+#include <strstream>
+#include <tuple>
+#include <typeinfo>
+#include <type_traits>
+#include <unordered_map>
+#include <unordered_set>
+#include <utility>
+#include <valarray>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+
+    list<int> myList = {10, 20, 30, 40, 50, 60};
+    list<int> myList2 = {101, 102, 103};
+
+    // myList.push_front(100);
+    // myList.push_back(110);
+
+    // myList.pop_back();
+    // myList.pop_front();
+
+    // myList.insert(next(myList.begin(), 2), 85); // o(N)
+    // myList.insert(next(myList.begin(), 2), {91, 92, 93});
+    // myList.insert(next(myList.begin(), 2), myList2.begin(), myList2.end()); // O(N+K)
+
+    // myList.erase(next(myList.begin(), 2));
+    // myList.erase(next(myList.begin(), 2), next(myList.begin(), 4));
+    //                   delete er shoro       sehsh
+
+    // replace(myList.begin(), myList.end(), 30, 100);
+
+    auto it = find(myList.begin(), myList.end(), 30);
+    if (it == myList.end())
+    {
+        cout << "Not Found\n";
+    }
+    else
+    {
+        cout << "Found\n";
+    }
+    // cout << *it << endl;
+
+    for (int value : myList)
+    {
+        cout << value << endl;
+    }
+    return 0;
+}
